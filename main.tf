@@ -8,7 +8,6 @@ terraform {
 }
 
 provider "aws" {
-  profile = "larma"
   region  = "eu-west-1"
 }
 
