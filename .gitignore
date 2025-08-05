@@ -1,0 +1,27 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.crash
+.terraform/
+.terraform.lock.hcl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Lambda build artifacts
+*.zip
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+
