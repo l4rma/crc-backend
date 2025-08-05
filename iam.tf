@@ -13,8 +13,8 @@ data "aws_iam_policy_document" "assume_role" {
 
 data "aws_iam_policy_document" "lambda_logs" {
   statement {
-    sid     = "AllowCloudWatch"
-    effect  = "Allow"
+    sid    = "AllowCloudWatch"
+    effect = "Allow"
     actions = [
       "logs:CreateLogGroup",
       "logs:CreateLogStream",
@@ -32,8 +32,8 @@ resource "aws_iam_policy" "logs" {
 
 data "aws_iam_policy_document" "lambda_dynamodb" {
   statement {
-    sid     = "AllowDynamoDB"
-    effect  = "Allow"
+    sid    = "AllowDynamoDB"
+    effect = "Allow"
     actions = [
       "dynamodb:GetItem",
       "dynamodb:PutItem",

@@ -1,7 +1,7 @@
 data "archive_file" "lambda_zip" {
   type        = "zip"
   source_dir  = "src/"
-  output_path =  "lambda.zip"
+  output_path = "lambda.zip"
 }
 
 resource "aws_lambda_function" "increment_view_counter" {
