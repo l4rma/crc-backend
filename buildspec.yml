@@ -10,6 +10,8 @@ phases:
 
   build:
     commands:
+      - echo Running Terraform Init
+      - terraform init
       - echo Running Terraform Plan
       - terraform plan -out=tfplan
       - echo Running Terraform Apply
