@@ -11,14 +11,15 @@ phases:
   build:
     commands:
       - echo Running Terraform Init
-      - terraform init
-      - echo Running Terraform Plan
-      - terraform plan -out=tfplan
+      - terraform init -input=false
+      - echo Running Terraform Apply
+      - terraform apply -input=false tfplan
 
   post_build:
     commands:
-      - echo "Completed Terraform plan phase"
+      - echo "Completed Terraform apply phase"
 
 artifacts:
   files:
     - '**/*'
+
