@@ -5,8 +5,7 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
-      - pip3 install pytest
-      - pip3 install .
+      - pip3 install pytest boto3 json
   build:
     commands:
       - python3 -m pytest --junitxml=pytest_reports/pytest_report.xml
