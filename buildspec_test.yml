@@ -6,7 +6,7 @@ phases:
       python: 3.7
     commands:
       - pip3 install --upgrade pip
-      - pip3 install pytest boto3 json
+      - pip3 install pytest boto3
   build:
     commands:
       - python3 -m pytest --junitxml=pytest_reports/pytest_report.xml
