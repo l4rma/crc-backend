@@ -6,9 +6,10 @@ phases:
       python: 3.7
     commands:
       - pip3 install pytest
+      - pip3 install .
   build:
     commands:
-      - pytest --junitxml=pytest_reports/pytest_report.xml
+      - python3 -m pytest --junitxml=pytest_reports/pytest_report.xml
 
 reports:
   pytest_reports:
