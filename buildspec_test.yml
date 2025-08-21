@@ -5,11 +5,13 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
-      - pip3 install --upgrade pip
-      - pip3 install pytest boto3
+      - pip install --upgrade pip
+      - pip install pytest boto3
+      - python3 --version
+      - python --version
   build:
     commands:
-      - python3 -m pytest --junitxml=pytest_reports/pytest_report.xml
+      - python -m pytest --junitxml=pytest_reports/pytest_report.xml
 
 reports:
   pytest_reports:
