@@ -14,18 +14,10 @@ phases:
       - terraform init
       - echo Running Terraform Plan
       - terraform plan -out=tfplan
-      - terraform show -json tfplan > tfplan.json
 
   post_build:
     commands:
       - echo "Completed Terraform plan phase"
-
-reports:
-  terraform_plan:
-    files:
-      - tfplan.json
-    base-directory: /
-    file-format: JSON
 
 artifacts:
   files:
