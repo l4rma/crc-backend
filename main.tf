@@ -18,5 +18,6 @@ provider "aws" {
   region = "eu-west-1"
 }
 
-
-
+resource "aws_s3_bucket" "crc_backend" {
+  bucket = "this-bucket-will-be-deleted-asdflkajsdflasdgh"
+}
